@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This is a project that was created using React and supabase. 
+This is a project that was created using React and supabase. <br>
 The styling was done using bootstrap components. 
 
 <br>
@@ -9,16 +9,15 @@ This was a semester project for a web development class I took in my university 
 
 <br>
 
-I used supabase as the backend because that was our requirement. I've noticed that supabase pauses my projects when I haven't worked with them for some time. So to work around it, you can contact me to resume the project, or you can create your own supabase project.
+I used supabase as the backend because that was our requirement. I've noticed that supabase pauses my projects when I haven't worked with them for some time. So to work around it, you can contact me to resume the project, or you can create your own supabase project. <br>
 Your supabase project will have two tables: std_issues (I should have used a more professional name I know) and issue_comments. 
 std_issues looks like this:
 ![image](https://github.com/IbrahimBM2714/student_issue_tracking_system/assets/115867055/cd54a969-e87b-4b39-b1a8-baec87891568)
-
+<br>
 Meanwhile, issue_comments looks like this: 
 ![image](https://github.com/IbrahimBM2714/student_issue_tracking_system/assets/115867055/7aef007e-d4f2-4693-9809-a30bc64a26c6)
 
-issue_comments uses std_issues's id as foreign key. 
-This is because the issue_comments table stores all the comments made by the relevant authorities. And to differentiate which comment was for which student, the foreign relationship is used.
+issue_comments uses std_issues's id as foreign key. This is because the issue_comments table stores all the comments made by the relevant authorities. And to differentiate which comment was for which student, the foreign relationship is used.
 
 
 <br> 
