@@ -1,70 +1,27 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a project that was created using React and supabase. 
+The styling was done using bootstrap components. 
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+This was a semester project for a web development class I took in my university years. The basic premise of this website is to serve as a portal where students can register their issues and have them displayed to the relevant authorities. This was a very basic learning project, so I didn't add any way of differentiating between different types of users as well as some other features.
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I used supabase as the backend because that was our requirement. I've noticed that supabase pauses my projects when I haven't worked with them for some time. So to work around it, you can contact me to resume the project, or you can create your own supabase project.
+Your supabase project will have two tables: std_issues (I should have used a more professional name I know) and issue_comments. 
+std_issues looks like this:
+![image](https://github.com/IbrahimBM2714/student_issue_tracking_system/assets/115867055/cd54a969-e87b-4b39-b1a8-baec87891568)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Meanwhile, issue_comments looks like this: 
+![image](https://github.com/IbrahimBM2714/student_issue_tracking_system/assets/115867055/7aef007e-d4f2-4693-9809-a30bc64a26c6)
 
-### `npm test`
+issue_comments uses std_issues's id as foreign key. 
+This is because the issue_comments table stores all the comments made by the relevant authorities. And to differentiate which comment was for which student, the foreign relationship is used.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<br> 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To run the project, you need to run npm i or npm install. This will install all the dependencies on your project. After which, you need to run npm start.
+You might get an error that the bootstrap component is not found. To resolve this, simply run npm i bootstrap.
